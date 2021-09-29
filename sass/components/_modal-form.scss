@@ -1,0 +1,97 @@
+.modal-form {
+    padding: 40px;
+  }
+  .modal-form-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+  .modal-form-field {
+    margin-bottom: 10px;
+  }
+  .modal-form-field-comment {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
+  .label-form {
+    display: block;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--main-text-color);
+    margin-bottom: 4px;
+  }
+  /* Forms */
+  .input-form {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus + .icon-form {
+        fill: var(--acent-color);
+      }
+    &:focus {
+        border: 1px solid var(--acent-color);
+    }
+}
+  .input-wrap {
+    display: block;
+    position: relative;
+  }
+  .icon-form {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--main-title-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  .btn-form {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+    background-color: var(--acent-color);
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    padding: 10px 55px;
+    border-radius: 4px;
+    border: transparent;
+    margin: 0 auto;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: var(--acent-hover-color);
+    }
+}
+  .comment-form {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+        border: 1px solid var(--acent-color);
+    }
+}
+  .comment-form::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
