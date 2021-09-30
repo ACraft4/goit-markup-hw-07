@@ -10,7 +10,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.btn-close {
+.modal-window__btn {
     width: 30px;
     height: 30px;
     background-color: var(--main-color);
@@ -21,14 +21,14 @@
     right: 8px;
     cursor: pointer;
 }
-.close-icon {
+.modal-window__icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     fill: var(--main-title-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .btn-close:hover & {
+    .modal-window__btn:hover & {
         fill: var(--acent-color);
     }
 }

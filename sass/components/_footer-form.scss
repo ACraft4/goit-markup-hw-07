@@ -1,8 +1,7 @@
 .footer-email-form {
     margin-left: auto;
-    padding-top: 12px;
 }
-.footer-item-email {
+.footer-email-form__item {
     color: var(--main-color);
     font-size: 14px;
     line-height: 16px;
@@ -10,8 +9,9 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     font-weight: bold;
+    padding-top: 12px;
 }
-.footer-form-input {
+.footer-form__input {
     font-size: 16px;
     line-height: 1.25;
     width: 358px;
@@ -29,7 +29,7 @@
     justify-content: center;
     align-items: center;
 }
-.btn-send {
+.footer-form__btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,6 @@
     }
 }
 
-
-.btn-send-text {
+.footer-form__text {
     margin-right: 10px;
 }

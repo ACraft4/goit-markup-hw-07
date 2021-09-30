@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .works-item {
+  .works-list__item {
     position: relative;
     margin-right: 30px;
     font-size: 0;
@@ -14,7 +14,7 @@
       margin-right: 0;
     }
   }
-  .works-text {
+  .works-list__text {
     font-weight: 700;
     line-height: 1.14;
     font-size: 14px;
@@ -22,7 +22,7 @@
     text-transform: uppercase;
     color: var(--main-color);
   }
-  .works-cover {
+  .works-list__cover {
     position: absolute;
     bottom: 0;
     width: 100%;

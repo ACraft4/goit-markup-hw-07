@@ -5,14 +5,14 @@
   .main-list {
     display: flex;
   }
-  .main-item {
+  .main-list__item {
     width: 270px;
     margin-right: 30px;
     &:nth-last-child(1) {
       margin-right: 0;
     }
   }
-  .main-title {
+  .main-list__title {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -21,7 +21,15 @@
     margin: 0;
     margin-bottom: 10px;
   }
-  .main-text {
+  .main-list__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+}
+  .main-list__text {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -29,7 +37,7 @@
     color: var(--main-text-color);
     margin: 0px;
   }
-  .main-icon {
+  .main-list__icon {
     width: 70px;
     height: 70px;
   }

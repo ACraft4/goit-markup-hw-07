@@ -4,13 +4,13 @@
   .clients-list {
     display: flex;
   }
-  .clients-item {
+  .clients-list__item {
     margin-right: 30px;
     &:nth-last-child(1) {
         margin-right: 0;
   }
 }
-  .clients-link {
+  .clients-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,15 +21,15 @@
     &:focus, &:hover {
     border: 1px solid var(--acent-color);
     border-radius: 4px;
-     }
+    }
   }
-  .clients-icon {
+  .clients-list__icon {
     width: 106px;
     height: 60px;
     fill: var(--icon-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .clients-link:focus &,
-    .clients-link:hover & {
+    .clients-list__link:focus &,
+    .clients-list__link:hover & {
       fill: var(--acent-color);
     }
 }

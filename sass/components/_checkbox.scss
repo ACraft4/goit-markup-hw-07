@@ -1,8 +1,8 @@
-.modal-form-checkbox {
+.checkbox-form {
     margin-bottom: 30px;
     display: block;
   }
-  .label-check {
+  .checkbox-form__label {
     display: flex;
     align-items: center;
     line-height: 1.71;
@@ -11,7 +11,7 @@
     cursor: pointer;
     font-size: 14px;
   }
-  .checkbox {
+  .checkbox-form__input {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -20,8 +20,12 @@
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
+    &:checked + .checkbox-form__icon-check {
+      background-color: var(--acent-color);
+      border: none;
   }
-  .icon-check-form {
+  }
+  .checkbox-form__icon-check {
     width: 16px;
     height: 15px;
     border: 2px solid var(--main-title-color);
@@ -35,10 +39,6 @@
         border: 2px solid var(--acent-color);
     }
 }
-  .checkbox:checked + .icon-check-form {
-    background-color: var(--acent-color);
-    border: none;
-  }
   .checkbox-link {
     color: var(--acent-color);
     margin-left: 5px;
